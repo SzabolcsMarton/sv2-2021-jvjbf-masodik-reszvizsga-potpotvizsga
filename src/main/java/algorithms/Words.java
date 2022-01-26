@@ -1,6 +1,7 @@
 package algorithms;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Words {
@@ -13,9 +14,7 @@ public class Words {
     }
 
     public void addWords(String... wordsToAdd) {
-        for (String actual : wordsToAdd) {
-            words.add(actual);
-        }
+        words.addAll(Arrays.asList(wordsToAdd));
     }
 
     public List<String> findWordsOccursOnes() {
